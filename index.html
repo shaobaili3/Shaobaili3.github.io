@@ -1,372 +1,1146 @@
-<!doctype html>
-<html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Shaobai Li</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
-body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
-}
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0
-}
-section {
-	margin-top: 30px;
-}
-li {
-	line-height: 1.8;
-	list-style: none;
-}
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ベクスト株式会社（Vext Inc.） | ベクストは、700社以上の導入実績をもつテキストマイニング ツール「VextMiner」を中核とし、「営業活動の生産性向上」や「コールセンターの業務効率化」をサポートします。</title>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PLTDDQK');</script>
+<!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1/dist/viewport-extra.min.js"></script>
+  <script>new ViewportExtra(375)</script>
+  <link rel="shortcut icon" href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/apple-touch-icon-precomposed.png">
+  <link rel="stylesheet" href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/css/lib.css?v=1.1.5">
+  <link rel="stylesheet" href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/css/app.css?v=1.1.5">
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
+  
+<!-- This site is optimized with the Yoast SEO plugin v11.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="ベクストは、700社以上の導入実績をもつテキストマイニング ツール「VextMiner」を中核とし、「営業活動の生産性向上」や「コールセンターの業務効率化」をサポートします。"/>
+<link rel="canonical" href="https://www.vext.co.jp/" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ベクスト株式会社（Vext Inc.） | ベクストは、700社以上の導入実績をもつテキストマイニング ツール「VextMiner」を中核とし、「営業活動の生産性向上」や「コールセンターの業務効率化」をサポートします。" />
+<meta property="og:description" content="ベクストは、700社以上の導入実績をもつテキストマイニング ツール「VextMiner」を中核とし、「営業活動の生産性向上」や「コールセンターの業務効率化」をサポートします。" />
+<meta property="og:url" content="https://www.vext.co.jp/" />
+<meta property="og:site_name" content="ベクスト株式会社（Vext Inc.）" />
+<meta property="og:image" content="https://www.vext.co.jp/wp-content/uploads/2019/06/vext_ogp.png" />
+<meta property="og:image:secure_url" content="https://www.vext.co.jp/wp-content/uploads/2019/06/vext_ogp.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="ベクストは、700社以上の導入実績をもつテキストマイニング ツール「VextMiner」を中核とし、「営業活動の生産性向上」や「コールセンターの業務効率化」をサポートします。" />
+<meta name="twitter:title" content="ベクスト株式会社（Vext Inc.） | ベクストは、700社以上の導入実績をもつテキストマイニング ツール「VextMiner」を中核とし、「営業活動の生産性向上」や「コールセンターの業務効率化」をサポートします。" />
+<meta name="twitter:image" content="https://www.vext.co.jp/wp-content/uploads/2019/06/vext_ogp.png" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.vext.co.jp/#organization","name":"","url":"https://www.vext.co.jp/","sameAs":[]},{"@type":"WebSite","@id":"https://www.vext.co.jp/#website","url":"https://www.vext.co.jp/","name":"\u30d9\u30af\u30b9\u30c8\u682a\u5f0f\u4f1a\u793e\uff08Vext Inc.\uff09","publisher":{"@id":"https://www.vext.co.jp/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.vext.co.jp/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.vext.co.jp/#webpage","url":"https://www.vext.co.jp/","inLanguage":"ja","name":"\u30d9\u30af\u30b9\u30c8\u682a\u5f0f\u4f1a\u793e\uff08Vext Inc.\uff09 | \u30d9\u30af\u30b9\u30c8\u306f\u3001700\u793e\u4ee5\u4e0a\u306e\u5c0e\u5165\u5b9f\u7e3e\u3092\u3082\u3064\u30c6\u30ad\u30b9\u30c8\u30de\u30a4\u30cb\u30f3\u30b0 \u30c4\u30fc\u30eb\u300cVextMiner\u300d\u3092\u4e2d\u6838\u3068\u3057\u3001\u300c\u55b6\u696d\u6d3b\u52d5\u306e\u751f\u7523\u6027\u5411\u4e0a\u300d\u3084\u300c\u30b3\u30fc\u30eb\u30bb\u30f3\u30bf\u30fc\u306e\u696d\u52d9\u52b9\u7387\u5316\u300d\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002","isPartOf":{"@id":"https://www.vext.co.jp/#website"},"about":{"@id":"https://www.vext.co.jp/#organization"},"description":"\u30d9\u30af\u30b9\u30c8\u306f\u3001700\u793e\u4ee5\u4e0a\u306e\u5c0e\u5165\u5b9f\u7e3e\u3092\u3082\u3064\u30c6\u30ad\u30b9\u30c8\u30de\u30a4\u30cb\u30f3\u30b0 \u30c4\u30fc\u30eb\u300cVextMiner\u300d\u3092\u4e2d\u6838\u3068\u3057\u3001\u300c\u55b6\u696d\u6d3b\u52d5\u306e\u751f\u7523\u6027\u5411\u4e0a\u300d\u3084\u300c\u30b3\u30fc\u30eb\u30bb\u30f3\u30bf\u30fc\u306e\u696d\u52d9\u52b9\u7387\u5316\u300d\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.vext.co.jp\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
-}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.vext.co.jp/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='old-theme-style-common-css'  href='https://www.vext.co.jp/wp-content/themes/vext-corp-2019//old-theme/vext-theme/css/style-common.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='old-theme-style-contents-css'  href='https://www.vext.co.jp/wp-content/themes/vext-corp-2019//old-theme/vext-theme/css/style-contents.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='old-theme-style-sp-css'  href='https://www.vext.co.jp/wp-content/themes/vext-corp-2019//old-theme/vext-theme/css/style-sp.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='https://www.vext.co.jp/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.vext.co.jp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.vext.co.jp/wp-includes/wlwmanifest.xml" /> 
+</head>
 
-	</style>
-	
-	</head>
-	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Shaobai Li
-					</h1>
-					<h2>
-						iOS Programmer
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+<body class="home blog">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLTDDQK"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header id="js-header" class="header js-header">
+  <div class="header__inner js-header-inner">
+    <a class="header__logo" href="https://www.vext.co.jp/">
+      <h1>        <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/header-logo.png" alt="Vext" class="header__logo__image">
+      </h1>    </a>
+    <nav class="header__menu js-header-menu">
+      <ul class="header__nav">
+        <li class="header__nav__item">
+          <a href="https://www.vext.co.jp/about/" class="header__nav__item__inner js-menu__item" data-id="page-about">
+            <span class="header__nav__item__en">About</span>
+            <span class="header__nav__item__ja">ベクストについて</span>
+          </a>
+        </li>
+        <li class="header__nav__item">
+          <span class="header__nav__item__inner js-menu__item" data-id="page-products">
+            <span class="header__nav__item__en">Products</span>
+            <span class="header__nav__item__ja">製品一覧</span>
+          </span>
+          <ul class="header__nav__item__children">
+            <li class="header__nav__item__children__item header__nav__item__children__item--large  header__nav__item__children__item--order-1">
+              <a href="https://www.vext.co.jp/vextminer/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextminer">VextMiner</a>
+            </li>
+            <li class="header__nav__item__children__item header__nav__item__children__item--order-3">
+              <a href="https://www.vext.co.jp/vextcloud/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextcloud">VextCloud</a>
+            </li>
+            <li class="header__nav__item__children__item header__nav__item__children__item--large header__nav__item__children__item--order-2">
+              <a href="https://www.vext.co.jp/vextvoiceminer/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextvoiceminer">VextVoiceMiner</a>
+            </li>
+            <li class="header__nav__item__children__item header__nav__item__children__item--order-4">
+              <a href="https://www.vext.co.jp/vextrecommend/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextrecommend">VextRecommend</a>
+            </li>
+            <li class="header__nav__item__children__item header__nav__item__children__item--order-5">
+              <a href="https://www.vext.co.jp/vextresume/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextresume">VextResume</a>
+            </li>
+            <li class="header__nav__item__children__item header__nav__item__children__item--order-6">
+              <a href="https://www.vext.co.jp/vextportal/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextportal">VextPotal</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav__item">
+          <a href="https://www.vext.co.jp/case/" class="header__nav__item__inner js-menu__item" data-id="archive-case">
+            <span class="header__nav__item__en">Case Study</span>
+            <span class="header__nav__item__ja">導入事例</span>
+          </a>
+        </li>
+        <li class="header__nav__item">
+          <a href="https://www.vext.co.jp/seminar/" class="header__nav__item__inner js-menu__item" data-id="archive-seminar">
+            <span class="header__nav__item__en">Seminar / Event</span>
+            <span class="header__nav__item__ja">セミナー・イベント</span>
+          </a>
+        </li>
+        <li class="header__nav__item">
+          <a href="https://www.vext.co.jp/partnership/" class="header__nav__item__inner js-menu__item" data-id="page-partnership">
+            <span class="header__nav__item__en">Partner</span>
+            <span class="header__nav__item__ja">販売パートナープログラム</span>
+          </a>
+        </li>
+      </ul>
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">Shaobaili3@gmail.com</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">+86 0477 695 895</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="https://shaobaili3.github.io/">https://shaobaili3.github.io/</a>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>Shaobai Li is a professional developer who focuses on iOS now. He has strong knowledge of Swift programming and is passionate about iOS development.</p>
-		</div>
-	</section>
+      <ul class="header__sub-buttons">
+        <li class="header__sub-buttons__item">
+          <a href="https://www.vext.co.jp/technology/" class="header__sub-buttons__item__inner js-menu__item" data-id="page-technology">技術解説</a>
+        </li>
+        <li class="header__sub-buttons__item">
+          <a href="https://www.vext.co.jp/company/" class="header__sub-buttons__item__inner js-menu__item" data-id="page-company">会社概要</a>
+        </li>
+        <li class="header__sub-buttons__item">
+          <a href="https://www.vext.co.jp/faq/" class="header__sub-buttons__item__inner js-menu__item" data-id="page-faq">よくある質問</a>
+        </li>
+      </ul>
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Approach Solution</span>
-					<span class="date">
-						2017-05-01 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://approach-solutions.com/">http://approach-solutions.com/</a>
-				</div>
-				<div class="position">
-					Full Time Junior iOS Developer
-				</div>
-				<div class="summary">
-					<p>Building native mobile apps for the web client, I played an important role in developing, mainly in charge of feature implementation and performance optimization.</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>University of Wollongong</span>
-					<span class="date">
-						2016-03-01 — 2016-11-31
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://business.uow.edu.au/acis-2016/index.html">https://business.uow.edu.au/acis-2016/index.html</a>
-				</div>
-				<div class="position">
-					Full Stack iOS Developer
-				</div>
-				<div class="summary">
-					<p>We were required to create a suite of mobile applications (Android and iOS) for the ACIS 2016 conference in Wollongong university. I was the only iOS developer in the team.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">This app was available on the app store. you can still view it by <a href="https://webcache.googleusercontent.com/search?q=cache:dJPjmne2wK4J:https://itunes.apple.com/au/app/acis2016/id1173202491%3Fmt%3D8+&amp;cd=1&amp;hl=en&amp;ct=clnk&amp;gl=au">cache</a></li>
-					<li class="bullet"><a href="https://play.google.com/store/apps/details?id=au.com.leremede.acis2016&amp;hl=en">Android version</a> is still available, iOS and android versions have exactly same functions</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Indie Developer</span>
-					<span class="date">
-						 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://webcache.googleusercontent.com/search?q=cache:_JDZEqniGlkJ:https://itunes.apple.com/us/app/timers/id1275441372%3Fmt%3D8+&amp;cd=2&amp;hl=en&amp;ct=clnk&amp;gl=au">Website</a>
-				</div>
-				<div class="position">
-					TimerS
-				</div>
-				<div class="summary">
-					<p>As a passionate iOS developer, I build my own iOS app in free time</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">This app is open source</li>
-					<li class="bullet">For more details, please see <a href="https://github.com/shaobaili3/TimerS">Github</a></li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+      <ul class="header__buttons">
+        <li class="header__buttons__item header__buttons__item--user">
+          <a href="https://members.vext.co.jp/vext-cgi/vexthome/login/login.tcl" target="_blank" class="header__buttons__item__inner"><!-- TODO: リンク　ユーザーサイト -->
+            <span class="header__buttons__item__icon header__buttons__item__icon--user">
+            <svg class="svg-sprite svg-sprite-door" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-door" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>          </span>
+            ユーザーサイト
+          </a>
+        </li>
+        <li class="header__buttons__item header__buttons__item--contact">
+          <a href="https://www.vext.co.jp/contact/" class="header__buttons__item__inner js-menu__item" data-id="page-contact">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
 
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>University of Wollongong Australia</span>
-					<span class="date">
-						2014-06-31 — 2016-11-31
-					</span>
-				</h4>
-				<div class="area">
-					Computer Science
-				</div>
-				<div class="studyType">
-					Bachelor
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4></h4>
-				</div>
-				<ul class="keywords">
-					<li>Extensive knowledge of Swift</li>
-					<li>Core Data and CoreFoundation</li>
-					<li>Published iOS commercial apps</li>
-					<li>Agile methodologies</li>
-					<li>Git development tools</li>
-					<li>Expert in solving technical issues</li>
-					<li>Two-years iOS experience</li>
-					<li>Java, C/C++, SQL Database</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+    <div id="js-header-hamburger" class="header__hamburger">
+      <div class="header__hamburger__inner">
+        <span class="header__hamburger__border header__hamburger__border--top"></span>
+        <span class="header__hamburger__border header__hamburger__border--center"></span>
+        <span class="header__hamburger__border header__hamburger__border--bottom"></span>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="wrap js-wrap">
+  <main data-barba="wrapper" id="barba-wrapper" class="main js-main">
+    <div data-barba="container" data-barba-namespace="page-home" id="js-page-container" class="barba-container" data-group="page-home">
+
+<div class="mv">
+  <div class="canvas__wrapper" id="js-canvas__wrapper">
+    <canvas class="canvas" id="js-canvas"></canvas>
+  </div>
+  <div class="mv__copy">
+    <p class="mv__copy-main">
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-1" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-1" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-2" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-2" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-3" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-3" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-4" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-4" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-5" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-5" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-6" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-6" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-7" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-7" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-8" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-8" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-9" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-9" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-10" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-10" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-11" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-11" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-12" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-12" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-13" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-13" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-14" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-14" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-15" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-15" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-16" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-16" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-17" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-17" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-18" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-18" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-19" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-19" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-20" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-20" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-21" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-21" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-22" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-22" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-23" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-23" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-24" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-24" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-25" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-25" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-26" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-26" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-27" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-27" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-28" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-28" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+                  <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-1" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-1" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-2" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-2" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-3" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-3" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-4" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-4" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-5" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-5" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-6" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-6" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-7" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-7" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-8" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-8" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-9" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-9" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-10" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-10" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-11" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-11" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-12" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-12" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-13" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-13" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-14" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-14" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-15" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-15" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-16" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-16" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-17" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-17" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-18" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-18" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-19" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-19" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-20" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-20" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-21" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-21" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-22" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-22" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-23" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-23" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-24" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-24" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-25" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-25" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-26" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-26" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-27" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-27" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-main-txt mv__copy-main-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-main-sp-28" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-main-sp-28" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+          </p>
+    <p class="mv__copy-sub">
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-1" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-1" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-2" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-2" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-3" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-3" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-4" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-4" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-5" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-5" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-6" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-6" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-7" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-7" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-8" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-8" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-9" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-9" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-10" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-10" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-11" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-11" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-12" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-12" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-13" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-13" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-14" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-14" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-15" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-15" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-16" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-16" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-17" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-17" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-18" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-18" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-19" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-19" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-20" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-20" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-21" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-21" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-22" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-22" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-23" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-23" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-24" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-24" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-25" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-25" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-26" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-26" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-27" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-27" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-28" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-28" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-29" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-29" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-30" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-30" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-31" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-31" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-32" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-32" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-33" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-33" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-34" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-34" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-35" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-35" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-36" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-36" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-37" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-37" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-38" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-38" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-39" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-39" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-40" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-40" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-41" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-41" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-42" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-42" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-43" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-43" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-44" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-44" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-45" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-45" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-46" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-46" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-47" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-47" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-48" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-48" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-49" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-49" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--pc">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-50" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-50" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+                  <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-1" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-1" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-2" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-2" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-3" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-3" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-4" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-4" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-5" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-5" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-6" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-6" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-7" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-7" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-8" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-8" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-9" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-9" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-10" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-10" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-11" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-11" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-12" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-12" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-13" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-13" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-14" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-14" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-15" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-15" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-16" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-16" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-17" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-17" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-18" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-18" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-19" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-19" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-20" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-20" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-21" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-21" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-22" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-22" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-23" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-23" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-24" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-24" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-25" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-25" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-26" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-26" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-27" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-27" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-28" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-28" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-29" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-29" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-30" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-30" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-31" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-31" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-32" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-32" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-33" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-33" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-34" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-34" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-35" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-35" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-36" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-36" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-37" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-37" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-38" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-38" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-39" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-39" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-40" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-40" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-41" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-41" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-42" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-42" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-43" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-43" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-44" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-44" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-45" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-45" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-46" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-46" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-47" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-47" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-48" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-48" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-49" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-49" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+            <span class="mv__copy-sub-txt mv__copy-sub-txt--sp">
+        <svg class="svg-sprite svg-sprite-mv-copy-sub-sp-50" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mv-copy-sub-sp-50" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>      </span>
+          </p>
+  </div>
+  <div class="mv__rect">
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+        <div class="mv__rect-block"></div>
+      </div>
+
+          <div class="information-bar information-bar--mv">
+      <section class="information-bar__box">
+        <h2 class="information-bar__heading">Information</h2>
+        <div class="information-bar__content">
+          <div class="information-bar__content__list">
+
+            <article class="information-bar__content__list__item">
+  <a href="https://www.vext.co.jp/information/2687/" class="information-bar__content__list__item__inner">
+    <p class="information-bar__content__list__item__status">
+      <time class="information-bar__content__list__item__status__date"
+            datetime="2021-02-01">
+        2021.2.1      </time>
+      <span
+        class="information-bar__content__list__item__status__category">お知らせ</span>
+    </p>
+    <h3 class="information-bar__content__list__item__title">事務所移転のお知らせ</h3>
+  </a>
+</article>
+<article class="information-bar__content__list__item">
+  <a href="https://www.vext.co.jp/information/2679/" class="information-bar__content__list__item__inner">
+    <p class="information-bar__content__list__item__status">
+      <time class="information-bar__content__list__item__status__date"
+            datetime="2021-01-29">
+        2021.1.29      </time>
+      <span
+        class="information-bar__content__list__item__status__category">ニュースリリース</span>
+    </p>
+    <h3 class="information-bar__content__list__item__title">チャット分析／音声感情分析の新機能を搭載 、テキストマイニングツール「VextMiner ver.15」提供開始</h3>
+  </a>
+</article>
+          </div>
+        </div>
+      </section>
+      <div class="information-bar__link information-bar__link--margin">
+        <a class="information-bar__link__inner" href="https://www.vext.co.jp/information/">
+          More Information
+          <span class="information-bar__link__arrow"><svg class="svg-sprite svg-sprite-arrow-long" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-arrow-long" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<section class="section-sov js-scroll-show">
+
+  <div class="section-sov__title">
+    <h2 class="heading js-heading-animation">
+  <div class="heading__main">Solution&nbsp;of&nbsp;Vext</div>
+  <div class="heading__sub">ベクストができること</div>
+</h2>
+  </div>
+
+  <div class="section-sov__message">
+    <p>人間が読みきれない大量のテキストデータを解析し、<br>見えなかった課題の発見やこれまでにない新たな「気付き」の獲得を支援します。</p>
+  </div>
+
+    <div class="section-sov__content">
+    <ul class="section-sov__cards">
+              <li class="section-sov__cards__item section-sov__cards__item--text">
+          <h3 class="section-sov__cards__item__heading"><span
+              class="section-sov__cards__item__heading__text">大量のテキストデータ</span></h3>
+          <div class="section-sov__cards__item__image">
+            <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/sov-card-media-text.png" alt="大量のテキストデータ">
+          </div>
+          <div class="section-sov__cards__item__message">
+            <p>コンタクトセンターの対応履歴<br>アンケートのフリーアンサー<br>故障・事故情報、営業日報など</p>          </div>
+          <i class="section-sov__cards__item__border"></i>
+        </li>
+              <li class="section-sov__cards__item section-sov__cards__item--data">
+          <h3 class="section-sov__cards__item__heading"><span
+              class="section-sov__cards__item__heading__text">テキスト解析エンジンによる<br>傾向分析</span></h3>
+          <div class="section-sov__cards__item__image">
+            <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/sov-card-media-data.png" alt="テキスト解析エンジンによる傾向分析">
+          </div>
+          <div class="section-sov__cards__item__message">
+            <p>たとえば流通小売データを<br>解析し、どんな反応が<br>多いのか傾向を分析</p>          </div>
+          <i class="section-sov__cards__item__border"></i>
+        </li>
+              <li class="section-sov__cards__item section-sov__cards__item--hint">
+          <h3 class="section-sov__cards__item__heading"><span
+              class="section-sov__cards__item__heading__text">気づき・発見</span></h3>
+          <div class="section-sov__cards__item__image">
+            <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/sov-card-media-hint.png" alt="気づき・発見">
+          </div>
+          <div class="section-sov__cards__item__message">
+            <p>業務改善や商品企画、<br>営業ノウハウ<br>FAQ・マニュアルの作成</p>          </div>
+          <i class="section-sov__cards__item__border"></i>
+        </li>
+              <li class="section-sov__cards__item section-sov__cards__item--faq">
+          <h3 class="section-sov__cards__item__heading"><span
+              class="section-sov__cards__item__heading__text">ナレッジ化・知識化</span></h3>
+          <div class="section-sov__cards__item__image">
+            <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/sov-card-media-faq.png" alt="ナレッジ化・知識化">
+          </div>
+          <div class="section-sov__cards__item__message">
+            <p>今まで見えなかった課題の<br>発見・新たな気づきの獲得</p>          </div>
+          <i class="section-sov__cards__item__border"></i>
+        </li>
+          </ul>
+  </div>
+
+  <div class="section-sov__button js-scroll-show">
+    <a class="button " href="https://www.vext.co.jp/about/" >
+  <span class="button__text">ベクストについて</span>
+</a>
+  </div>
+
+</section>
+
+<section class="section-product section-product--margin">
+
+  <div class="section-product__title">
+    <h2 class="heading js-heading-animation">
+  <div class="heading__main">Product</div>
+  <div class="heading__sub">Vextシリーズの紹介</div>
+</h2>
+  </div>
+
+    <div class="section-product__cards section-product__cards--margin">
+              <article class="section-product__cards__item js-scroll-show" data-hook=".7" data-hook-sp=".7">
+        <div class="section-product__cards__item__bg">
+          <div class="section-product__cards__item__bg__inner">
+            <div class="section-product__cards__item__bg__image"
+                 style="background-image: url('https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/top-vextminer.png');"></div>
+            <div class="section-product__cards__item__bg__mask">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>            </div>
+          </div>
+        </div>
+        <div class="section-product__cards__item__content">
+          <p class="section-product__cards__item__status">
+            <span
+              class="section-product__cards__item__status__number">01</span>
+            <span class="section-product__cards__item__status__name">多業種向けテキストデータ分析ツール</span>
+          </p>
+          <h3 class="section-product__cards__item__title">VextMiner</h3>
+          <div class="section-product__cards__item__message">
+            <p>大量のテキストデータを高速・高精度に分類。<br>長年の実績・ノウハウに基づく分析ツールについてご紹介します。</p>          </div>
+          <div class="section-product__cards__item__button">
+            <a class="button button--small" href="https://www.vext.co.jp/vextminer/" >
+  <span class="button__text">製品を詳しく知る</span>
+</a>
+          </div>
+        </div>
+      </article>
+                <article class="section-product__cards__item js-scroll-show" data-hook=".7" data-hook-sp=".7">
+        <div class="section-product__cards__item__bg">
+          <div class="section-product__cards__item__bg__inner">
+            <div class="section-product__cards__item__bg__image"
+                 style="background-image: url('https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/top-vextvoiceminer.png');"></div>
+            <div class="section-product__cards__item__bg__mask">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>            </div>
+          </div>
+        </div>
+        <div class="section-product__cards__item__content">
+          <p class="section-product__cards__item__status">
+            <span
+              class="section-product__cards__item__status__number">02</span>
+            <span class="section-product__cards__item__status__name">コールセンター・コンタクトセンター向け音声データ分析ツール</span>
+          </p>
+          <h3 class="section-product__cards__item__title">VextVoiceMiner</h3>
+          <div class="section-product__cards__item__message">
+            <p>音声をそのままデータ化・分析し、コンタクトセンターの業務を変革。<br>ベクストの独自技術を使用した音声マイニングツールについてご紹介します。</p>          </div>
+          <div class="section-product__cards__item__button">
+            <a class="button button--small" href="https://www.vext.co.jp/vextvoiceminer/" >
+  <span class="button__text">製品を詳しく知る</span>
+</a>
+          </div>
+        </div>
+      </article>
+            </div>
+
+</section>
 
 
-	
+<section class="section-case-study section-case-study--margin js-scroll-show">
+  <div class="section-case-study__title">
+    <h2 class="heading js-heading-animation">
+  <div class="heading__main">Case Studies</div>
+  <div class="heading__sub">導入事例</div>
+</h2>
+  </div>
 
-	</div>
-	
-	</body>
+  <div class="section-case-study__content">
+    <div class="slide-cards">
+      <div class="swiper-container js-section-case-studies">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+                                                  <div class="swiper-slide">
+                <article class="slide-cards__item">
+                  <a href="https://www.vext.co.jp/case/2518/" class="slide-cards__item__inner">
+                    <div
+                      class="slide-cards__item__media ">
+                      <img src="https://www.vext.co.jp/wp-content/uploads/2020/02/case_fujifilm.png" alt="繁忙期のコンタクトセンター負荷を40%削減し、スマホ時代の顧客接点変化にいち早く対応するWEBセルフサービス戦略"
+                           class="slide-cards__item__media__image">
+                    </div>
+                    <p class="slide-cards__item__group">テキストマイニング</p>
+                    <h3 class="slide-cards__item__title">繁忙期のコンタクトセンター負荷を40%削減し、スマホ時代の顧客接点変化にいち早く対応するWEBセルフサービス戦略</h3>
+                    <p class="slide-cards__item__bottom">富士フイルム株式会社</p>
+                  </a>
+                </article>
+              </div>
+                                        <div class="swiper-slide">
+                <article class="slide-cards__item">
+                  <a href="https://www.vext.co.jp/case/2133/" class="slide-cards__item__inner">
+                    <div
+                      class="slide-cards__item__media ">
+                      <img src="https://www.vext.co.jp/wp-content/uploads/2019/07/case_maruhoshi.png" alt="お客様に新たな気付きを提供するとともに「言葉の分析力」で新たなビジネスを展開"
+                           class="slide-cards__item__media__image">
+                    </div>
+                    <p class="slide-cards__item__group">テキストマイニング</p>
+                    <h3 class="slide-cards__item__title">お客様に新たな気付きを提供するとともに「言葉の分析力」で新たなビジネスを展開</h3>
+                    <p class="slide-cards__item__bottom">丸星株式会社 様</p>
+                  </a>
+                </article>
+              </div>
+                                        <div class="swiper-slide">
+                <article class="slide-cards__item">
+                  <a href="https://www.vext.co.jp/case/2131/" class="slide-cards__item__inner">
+                    <div
+                      class="slide-cards__item__media ">
+                      <img src="https://www.vext.co.jp/wp-content/uploads/2019/07/case_agrex02.png" alt="金融業界コールセンターの導入事例をご紹介：導入支援コンサルサービス"
+                           class="slide-cards__item__media__image">
+                    </div>
+                    <p class="slide-cards__item__group">音声マイニング</p>
+                    <h3 class="slide-cards__item__title">金融業界コールセンターの導入事例をご紹介：導入支援コンサルサービス</h3>
+                    <p class="slide-cards__item__bottom">株式会社アグレックス 様</p>
+                  </a>
+                </article>
+              </div>
+                              </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section-case-study__button js-scroll-show">
+    <a class="button " href="https://www.vext.co.jp/case/" >
+  <span class="button__text">導入事例の一覧を見る</span>
+</a>
+  </div>
+</section>
+
+
+<section class="section-seminar section-seminar--margin js-scroll-show">
+  <div class="section-seminar__title">
+    <h2 class="heading-center js-heading-animation">
+<div class="heading-center__main">Seminar / Event</div>
+<div class="heading-center__sub">セミナー・イベントの紹介</div>
+</h2>
+  </div>
+
+    <div class="section-seminar__content section-seminar__content--margin">
+
+    <div class="section-seminar__content__inner">
+      <div class="seminar-info">
+                                          <article class="seminar-info__item">
+  <a href="https://www.vext.co.jp/seminar/2699/" class="seminar-info__item__inner">
+    <div class="seminar-info__item__label">セミナー</div>
+    <div class="seminar-info__item__nav">
+      <time class="seminar-info__item__nav__date"
+            datetime="2021-04-13">2021.4.13</time>
+      <span class="seminar-info__item__nav__place">開催</span>
+    </div>
+    <h3 class="seminar-info__item__title">B2B企業でのNPS活用とサービス改善につなげるPDCA実践法</h3>
+    <div
+      class="seminar-info__item__status seminar-info__item__status--open">
+      <div class="seminar-info__item__status__inner">
+        受付中      </div>
+    </div>
+  </a>
+</article>
+
+                                  <article class="seminar-info__item">
+  <a href="https://www.vext.co.jp/seminar/2698/" class="seminar-info__item__inner">
+    <div class="seminar-info__item__label">セミナー</div>
+    <div class="seminar-info__item__nav">
+      <time class="seminar-info__item__nav__date"
+            datetime="2021-04-06">2021.4.6</time>
+      <span class="seminar-info__item__nav__place">開催</span>
+    </div>
+    <h3 class="seminar-info__item__title">実データで体感！初心者の為のテキストマイニング入門セミナー　～技術解説から活用事例まで～</h3>
+    <div
+      class="seminar-info__item__status seminar-info__item__status--open">
+      <div class="seminar-info__item__status__inner">
+        受付中      </div>
+    </div>
+  </a>
+</article>
+
+                                  <article class="seminar-info__item">
+  <a href="https://www.vext.co.jp/seminar/2693/" class="seminar-info__item__inner">
+    <div class="seminar-info__item__label">セミナー</div>
+    <div class="seminar-info__item__nav">
+      <time class="seminar-info__item__nav__date"
+            datetime="2021-03-10">2021.3.10</time>
+      <span class="seminar-info__item__nav__place">開催</span>
+    </div>
+    <h3 class="seminar-info__item__title">【シリーズセミナー】クラウドで実現する、最新のコールセンターシステム（第2回/全5回）</h3>
+    <div
+      class="seminar-info__item__status seminar-info__item__status--end">
+      <div class="seminar-info__item__status__inner">
+        開催終了      </div>
+    </div>
+  </a>
+</article>
+
+                        </div>
+    </div>
+
+  </div>
+
+  <div class="section-seminar__button section-seminar__button--margin js-scroll-show">
+    <a class="button " href="https://www.vext.co.jp/seminar/" >
+  <span class="button__text">セミナー・イベントの一覧を見る</span>
+</a>
+  </div>
+
+</section>
+
+
+<aside class="link-card link-card--top link-card--margin">
+
+  <ul class="link-card__lists">
+          <li class="link-card__lists__item">
+        <a href="https://www.vext.co.jp/company/" class="link-card__lists__item__inner">
+          <p class="link-card__lists__item__title">Company</p>
+          <p class="link-card__lists__item__text">会社概要</p>
+        </a>
+      </li>
+          <li class="link-card__lists__item">
+        <a href="https://www.vext.co.jp/technology/" class="link-card__lists__item__inner">
+          <p class="link-card__lists__item__title">Technology</p>
+          <p class="link-card__lists__item__text">技術解説</p>
+        </a>
+      </li>
+          <li class="link-card__lists__item">
+        <a href="https://www.vext.co.jp/faq/" class="link-card__lists__item__inner">
+          <p class="link-card__lists__item__title">FAQ</p>
+          <p class="link-card__lists__item__text">よくある質問</p>
+        </a>
+      </li>
+      </ul>
+
+</aside>
+
+<section class="banner-clients banner-clients--margin">
+  <div class="banner-clients__title">
+    <h2 class="heading-center ">
+<div class="heading-center__main">Our Clients</div>
+<div class="heading-center__sub">実績</div>
+</h2>
+  </div>
+  <ul class="banner-clients__lists banner-clients__lists--margin">
+          <li class="banner-clients__lists__item">
+        <span class="banner-clients__lists__item__inner">
+          <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/banner-fujifilm.png" alt="FUJIFILM" class="banner-clients__lists__item__image">
+        </span>
+      </li>
+          <li class="banner-clients__lists__item">
+        <span class="banner-clients__lists__item__inner">
+          <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/banner-daiichi-sankyo.png" alt="Daiichi-Sankyo" class="banner-clients__lists__item__image">
+        </span>
+      </li>
+          <li class="banner-clients__lists__item">
+        <span class="banner-clients__lists__item__inner">
+          <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/banner-relia-inc.png" alt="Relia,Inc" class="banner-clients__lists__item__image">
+        </span>
+      </li>
+          <li class="banner-clients__lists__item">
+        <span class="banner-clients__lists__item__inner">
+          <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/banner-sompo.jpg" alt="損保ジャパン" class="banner-clients__lists__item__image">
+        </span>
+      </li>
+          <li class="banner-clients__lists__item">
+        <span class="banner-clients__lists__item__inner">
+          <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/banner-4travel.png" alt="フォートラベル" class="banner-clients__lists__item__image">
+        </span>
+      </li>
+          <li class="banner-clients__lists__item">
+        <span class="banner-clients__lists__item__inner">
+          <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/banner-asurion.png" alt="サンプル" class="banner-clients__lists__item__image">
+        </span>
+      </li>
+          <li class="banner-clients__lists__item">
+        <span class="banner-clients__lists__item__inner">
+          <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/banner-yamato.png" alt="サンプル" class="banner-clients__lists__item__image">
+        </span>
+      </li>
+      </ul>
+  <div class="banner-clients__bottom banner-clients__bottom--margin">
+    <p>株式会社三菱UFJフィナンシャル・グループ&nbsp;/&nbsp;キヤノン株式会社<br class="u-hidden-inline-pc"><span class="u-hidden-inline-sp">&nbsp;/&nbsp;</span>三菱電機株式会社&nbsp;/&nbsp;住友生命保険相互会社<br class="u-hidden-inline-sp"><span class="u-hidden-inline-pc">&nbsp;/&nbsp;</span>
+      株式会社かんぽ生命保険<br class="u-hidden-inline-pc"><span class="u-hidden-inline-sp">&nbsp;/&nbsp;</span>トヨタコネクティッド株式会社&nbsp;/&nbsp;株式会社阪急阪神カード<br class="u-hidden-inline-pc"><span class="u-hidden-inline-sp">&nbsp;/&nbsp;</span>金融庁&nbsp;/&nbsp;相模原市役所&nbsp;<span class="banner-clients__bottom__other">(他多数)</span></p>
+  </div>
+</section>
+      </div><!-- /.barba-container -->
+    </main><!-- / #barba-wrapper.main -->
+
+  <aside class="section-contact section-contact--margin">
+    <div class="section-contact__title">
+      <h2 class="heading-center ">
+<div class="heading-center__main">Contact</div>
+<div class="heading-center__sub">お問い合わせ</div>
+</h2>
+    </div>
+
+    <div class="section-contact__content section-contact__content--margin">
+      <div class="section-contact__message">
+        <p>ベクストは、「大量のアンケートデータを解析したい」「コールセンターの音声データを業務改善に生かしたい」<br class="u-hidden-inline-sp">「営業日報を業務の改善に生かしたい」そんな考えをお持ちの企業様に、ソリューションを提供いたします。<br>ぜひお気軽にお問い合わせください。</p>
+      </div>
+
+      <div class="section-contact__button">
+        <a href="https://www.vext.co.jp/contact/" class="button-plate ">
+  <div class="button-plate__inner">
+    <p class="button-plate__text">
+              <span class="button-plate__text__icon"><svg class="svg-sprite svg-sprite-mail" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+            お問い合わせはこちらから    </p>
+    <span class="button-plate__arrow"><svg class="svg-sprite svg-sprite-arrow" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+  </div>
+</a>
+      </div>
+
+      <div class="section-contact__bottom">
+        <p class="section-contact__bottom__tel">03-4590-6755</p>
+        <p class="section-contact__bottom__detail">受付時間：9:00〜17:00<br>(土日祝、年末年始除く)</p>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="footer__plate">
+      <div class="footer__plate__item footer__plate__item--pc footer__plate__item--1">
+        <div class="footer-nav">
+          <h2>
+            <a href="https://www.vext.co.jp/about/">ベクストについて</a>
+          </h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/about/compare/">テキストマイニングツールの他社比較</a>
+            </li>
+          </ul>
+
+          <h2>
+            <span>製品一覧</span>
+          </h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/vextminer/">VextMiner</a>
+              <ul>
+                <li><a href="https://www.vext.co.jp/vextcloud/">VextCloud</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/vextvoiceminer/">VextVoiceMiner</a>
+              <ul>
+                <li><a href="https://www.vext.co.jp/vextrecommend/">VextRecommend</a></li>
+                <li><a href="https://www.vext.co.jp/vextresume/">VextResume</a></li>
+                <li><a href="https://www.vext.co.jp/vextportal/">VextPortal</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/download/">カタログダウンロード</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/consulting/">研修コース・分析コンサルティング</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__plate__item footer__plate__item--pc footer__plate__item--2">
+        <div class="footer-nav">
+          <h2><span>導入事例</span></h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/case/">導入事例一覧</a>
+            </li>
+          </ul>
+          <h2><span>セミナー・イベント</span></h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/seminar/">セミナー・イベント一覧</a>
+            </li>
+          </ul>
+          <h2><a href="https://www.vext.co.jp/partnership/">販売パートナープログラム</a></h2>
+          <h2><a href="https://www.vext.co.jp/faq/">よくある質問</a></h2>
+          <h2><a href="https://www.vext.co.jp/contact/">お問い合わせ</a></h2>
+        </div>
+      </div>
+      <div class="footer__plate__item footer__plate__item--pc footer__plate__item--3">
+        <div class="footer-nav">
+          <h2><a href="https://www.vext.co.jp/technology/">技術解説</a></h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/technology/textmining/">テキストマイニングとは</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/technology/basic/">基本技術の解説</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/technology/column/">テキストマイニングの手法</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/technology/glossary/">用語集</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/technology/voicemining/">音声マイニングとは</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/technology/analysis/">会話分析技術の解説</a>
+            </li>
+          </ul>
+          <h2><span>インフォメーション</span></h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/information/">インフォメーション一覧</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__plate__item footer__plate__item--pc footer__plate__item--4">
+        <div class="footer-nav">
+          <h2><a href="https://www.vext.co.jp/company/">会社案内</a></h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/history/">沿革</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/security/">情報セキュリティ基本方針</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/privacy/">個人情報の取り扱いについて</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-company footer-company--margin">
+          <a href="https://www.vext.co.jp/" class="footer-company__logo">
+            <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/footer-logo.png" alt="Vext" class="footer-company__logo__image">
+          </a>
+          <div class="footer-company__detail">
+            <p>東京都品川区上大崎2-15-19<br>
+              MG目黒駅前ビル<br>
+              <a href="https://goo.gl/maps/C57fEjUxP9n5XEuL8" target="_blank">Google Map</a><br>
+              TEL 03-4590-6755</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="footer__plate__item footer__plate__item--sp footer__plate__item--top-1">
+        <div class="footer-nav">
+          <h2><a href="https://www.vext.co.jp/about/">ベクストについて</a></h2>
+          <h2>
+            <span>製品一覧</span>
+          </h2>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="https://www.vext.co.jp/vextminer/">VextMiner</a></li>
+                <li><a href="https://www.vext.co.jp/vextvoiceminer/">VextVoiceMiner</a></li>
+              </ul>
+            </li>
+          </ul>
+          <h2><a href="https://www.vext.co.jp/case/">導入事例</a></h2>
+          <h2><a href="https://www.vext.co.jp/seminar/">セミナー・イベント</a></h2>
+          <h2><a href="https://www.vext.co.jp/partnership/">販売パートナープログラム</a></h2>
+        </div>
+      </div>
+
+      <div class="footer__plate__item footer__plate__item--sp footer__plate__item--top-2">
+        <div class="footer-nav">
+          <h2><a href="https://www.vext.co.jp/technology/">技術解説</a></h2>
+          <h2><a href="https://www.vext.co.jp/faq/">よくある質問</a></h2>
+          <h2><a href="https://www.vext.co.jp/information/">インフォメーション</a></h2>
+          <h2><a href="https://www.vext.co.jp/contact/">お問い合わせ</a></h2>
+        </div>
+      </div>
+
+      <div class="footer__plate__item footer__plate__item--sp footer__plate__item--bottom-1">
+        <div class="footer-nav">
+          <h2><a href="https://www.vext.co.jp/company/">会社案内</a></h2>
+          <ul>
+            <li><a href="https://www.vext.co.jp/history/">沿革</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="https://www.vext.co.jp/security/">情報セキュリティ基本方針</a></li>
+            <li><a href="https://www.vext.co.jp/privacy/">個人情報の取り扱いについて</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__plate__item footer__plate__item--sp footer__plate__item--bottom-2">
+        <div class="footer-company footer-company--margin">
+          <a href="https://www.vext.co.jp/" class="footer-company__logo">
+            <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/footer-logo.png" alt="Vext" class="footer-company__logo__image">
+          </a>
+          <div class="footer-company__detail">
+            <p>東京都品川区上大崎2-15-19<br>
+              MG目黒駅前ビル<br>
+              <a href="https://goo.gl/maps/C57fEjUxP9n5XEuL8" target="_blank">Google Map</a><br>
+              TEL 03-4590-6755</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="footer__copy"><small>Copyright &copy; 2019 Vext Inc. All Rights Reserved.</small></div>
+  </footer>
+
+</div><!-- /.wrap -->
+<div id="js-switch-mask" class="switch-mask"><div class="switch-mask__inner"></div></div>
+    <script type='text/javascript' src='https://www.vext.co.jp/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
+    <script src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/js/lib.js?v=1.1.5"></script>
+    <script src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/js/app.js?v=1.1.5"></script>
+</body>
 </html>

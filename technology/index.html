@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>技術解説 | ベクスト株式会社（Vext Inc.）</title>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PLTDDQK');</script>
+<!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1/dist/viewport-extra.min.js"></script>
+  <script>new ViewportExtra(375)</script>
+  <link rel="shortcut icon" href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/apple-touch-icon-precomposed.png">
+  <link rel="stylesheet" href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/css/lib.css?v=1.1.5">
+  <link rel="stylesheet" href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/css/app.css?v=1.1.5">
+
+  
+<!-- This site is optimized with the Yoast SEO plugin v11.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="技術解説 テキストマイニングとは テキストマイニングの基本について解説しています。 基本技術の解説 テキストマイニングの基本技術について解説しています。 テキストマイニングツール比較 ツールの概要や、活用シーン別に見た特徴について解説します。 テキストマイニングの手法"/>
+<link rel="canonical" href="https://www.vext.co.jp/technology/" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="技術解説 | ベクスト株式会社（Vext Inc.）" />
+<meta property="og:description" content="技術解説 テキストマイニングとは テキストマイニングの基本について解説しています。 基本技術の解説 テキストマイニングの基本技術について解説しています。 テキストマイニングツール比較 ツールの概要や、活用シーン別に見た特徴について解説します。 テキストマイニングの手法" />
+<meta property="og:url" content="https://www.vext.co.jp/technology/" />
+<meta property="og:site_name" content="ベクスト株式会社（Vext Inc.）" />
+<meta property="og:image" content="http://[template_url]/img/technology/index/thumb_textmining.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="技術解説 テキストマイニングとは テキストマイニングの基本について解説しています。 基本技術の解説 テキストマイニングの基本技術について解説しています。 テキストマイニングツール比較 ツールの概要や、活用シーン別に見た特徴について解説します。 テキストマイニングの手法" />
+<meta name="twitter:title" content="技術解説 | ベクスト株式会社（Vext Inc.）" />
+<meta name="twitter:image" content="http://[template_url]/img/technology/index/thumb_textmining.jpg" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.vext.co.jp/#organization","name":"","url":"https://www.vext.co.jp/","sameAs":[]},{"@type":"WebSite","@id":"https://www.vext.co.jp/#website","url":"https://www.vext.co.jp/","name":"\u30d9\u30af\u30b9\u30c8\u682a\u5f0f\u4f1a\u793e\uff08Vext Inc.\uff09","publisher":{"@id":"https://www.vext.co.jp/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.vext.co.jp/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.vext.co.jp/technology/#webpage","url":"https://www.vext.co.jp/technology/","inLanguage":"ja","name":"\u6280\u8853\u89e3\u8aac | \u30d9\u30af\u30b9\u30c8\u682a\u5f0f\u4f1a\u793e\uff08Vext Inc.\uff09","isPartOf":{"@id":"https://www.vext.co.jp/#website"},"image":{"@type":"ImageObject","@id":"https://www.vext.co.jp/technology/#primaryimage","url":"[template_url]/img/technology/index/thumb_textmining.jpg"},"primaryImageOfPage":{"@id":"https://www.vext.co.jp/technology/#primaryimage"},"datePublished":"2019-05-09T03:07:01+00:00","dateModified":"2019-05-09T03:07:01+00:00","description":"\u6280\u8853\u89e3\u8aac \u30c6\u30ad\u30b9\u30c8\u30de\u30a4\u30cb\u30f3\u30b0\u3068\u306f \u30c6\u30ad\u30b9\u30c8\u30de\u30a4\u30cb\u30f3\u30b0\u306e\u57fa\u672c\u306b\u3064\u3044\u3066\u89e3\u8aac\u3057\u3066\u3044\u307e\u3059\u3002 \u57fa\u672c\u6280\u8853\u306e\u89e3\u8aac \u30c6\u30ad\u30b9\u30c8\u30de\u30a4\u30cb\u30f3\u30b0\u306e\u57fa\u672c\u6280\u8853\u306b\u3064\u3044\u3066\u89e3\u8aac\u3057\u3066\u3044\u307e\u3059\u3002 \u30c6\u30ad\u30b9\u30c8\u30de\u30a4\u30cb\u30f3\u30b0\u30c4\u30fc\u30eb\u6bd4\u8f03 \u30c4\u30fc\u30eb\u306e\u6982\u8981\u3084\u3001\u6d3b\u7528\u30b7\u30fc\u30f3\u5225\u306b\u898b\u305f\u7279\u5fb4\u306b\u3064\u3044\u3066\u89e3\u8aac\u3057\u307e\u3059\u3002 \u30c6\u30ad\u30b9\u30c8\u30de\u30a4\u30cb\u30f3\u30b0\u306e\u624b\u6cd5"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.vext.co.jp\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.vext.co.jp/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='old-theme-style-common-css'  href='https://www.vext.co.jp/wp-content/themes/vext-corp-2019//old-theme/vext-theme/css/style-common.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='old-theme-style-contents-css'  href='https://www.vext.co.jp/wp-content/themes/vext-corp-2019//old-theme/vext-theme/css/style-contents.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='old-theme-style-sp-css'  href='https://www.vext.co.jp/wp-content/themes/vext-corp-2019//old-theme/vext-theme/css/style-sp.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='https://www.vext.co.jp/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.vext.co.jp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.vext.co.jp/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://www.vext.co.jp/?p=132' />
+<link rel="alternate" type="application/json+oembed" href="https://www.vext.co.jp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vext.co.jp%2Ftechnology%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.vext.co.jp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vext.co.jp%2Ftechnology%2F&#038;format=xml" />
+</head>
+
+<body class="page-template page-template-page-old-template page-template-page-old-template-php page page-id-132 page-parent">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLTDDQK"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header id="js-header" class="header js-header">
+  <div class="header__inner js-header-inner">
+    <a class="header__logo" href="https://www.vext.co.jp/">
+              <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/header-logo.png" alt="Vext" class="header__logo__image">
+          </a>
+    <nav class="header__menu js-header-menu">
+      <ul class="header__nav">
+        <li class="header__nav__item">
+          <a href="https://www.vext.co.jp/about/" class="header__nav__item__inner js-menu__item" data-id="page-about">
+            <span class="header__nav__item__en">About</span>
+            <span class="header__nav__item__ja">ベクストについて</span>
+          </a>
+        </li>
+        <li class="header__nav__item">
+          <span class="header__nav__item__inner js-menu__item" data-id="page-products">
+            <span class="header__nav__item__en">Products</span>
+            <span class="header__nav__item__ja">製品一覧</span>
+          </span>
+          <ul class="header__nav__item__children">
+            <li class="header__nav__item__children__item header__nav__item__children__item--large  header__nav__item__children__item--order-1">
+              <a href="https://www.vext.co.jp/vextminer/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextminer">VextMiner</a>
+            </li>
+            <li class="header__nav__item__children__item header__nav__item__children__item--order-3">
+              <a href="https://www.vext.co.jp/vextcloud/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextcloud">VextCloud</a>
+            </li>
+            <li class="header__nav__item__children__item header__nav__item__children__item--large header__nav__item__children__item--order-2">
+              <a href="https://www.vext.co.jp/vextvoiceminer/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextvoiceminer">VextVoiceMiner</a>
+            </li>
+            <li class="header__nav__item__children__item header__nav__item__children__item--order-4">
+              <a href="https://www.vext.co.jp/vextrecommend/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextrecommend">VextRecommend</a>
+            </li>
+            <li class="header__nav__item__children__item header__nav__item__children__item--order-5">
+              <a href="https://www.vext.co.jp/vextresume/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextresume">VextResume</a>
+            </li>
+            <li class="header__nav__item__children__item header__nav__item__children__item--order-6">
+              <a href="https://www.vext.co.jp/vextportal/" class="header__nav__item__children__item__inner js-menu__item" data-id="page-vextportal">VextPotal</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav__item">
+          <a href="https://www.vext.co.jp/case/" class="header__nav__item__inner js-menu__item" data-id="archive-case">
+            <span class="header__nav__item__en">Case Study</span>
+            <span class="header__nav__item__ja">導入事例</span>
+          </a>
+        </li>
+        <li class="header__nav__item">
+          <a href="https://www.vext.co.jp/seminar/" class="header__nav__item__inner js-menu__item" data-id="archive-seminar">
+            <span class="header__nav__item__en">Seminar / Event</span>
+            <span class="header__nav__item__ja">セミナー・イベント</span>
+          </a>
+        </li>
+        <li class="header__nav__item">
+          <a href="https://www.vext.co.jp/partnership/" class="header__nav__item__inner js-menu__item" data-id="page-partnership">
+            <span class="header__nav__item__en">Partner</span>
+            <span class="header__nav__item__ja">販売パートナープログラム</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="header__sub-buttons">
+        <li class="header__sub-buttons__item">
+          <a href="https://www.vext.co.jp/technology/" class="header__sub-buttons__item__inner js-menu__item" data-id="page-technology">技術解説</a>
+        </li>
+        <li class="header__sub-buttons__item">
+          <a href="https://www.vext.co.jp/company/" class="header__sub-buttons__item__inner js-menu__item" data-id="page-company">会社概要</a>
+        </li>
+        <li class="header__sub-buttons__item">
+          <a href="https://www.vext.co.jp/faq/" class="header__sub-buttons__item__inner js-menu__item" data-id="page-faq">よくある質問</a>
+        </li>
+      </ul>
+
+      <ul class="header__buttons">
+        <li class="header__buttons__item header__buttons__item--user">
+          <a href="https://members.vext.co.jp/vext-cgi/vexthome/login/login.tcl" target="_blank" class="header__buttons__item__inner"><!-- TODO: リンク　ユーザーサイト -->
+            <span class="header__buttons__item__icon header__buttons__item__icon--user">
+            <svg class="svg-sprite svg-sprite-door" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-door" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>          </span>
+            ユーザーサイト
+          </a>
+        </li>
+        <li class="header__buttons__item header__buttons__item--contact">
+          <a href="https://www.vext.co.jp/contact/" class="header__buttons__item__inner js-menu__item" data-id="page-contact">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="js-header-hamburger" class="header__hamburger">
+      <div class="header__hamburger__inner">
+        <span class="header__hamburger__border header__hamburger__border--top"></span>
+        <span class="header__hamburger__border header__hamburger__border--center"></span>
+        <span class="header__hamburger__border header__hamburger__border--bottom"></span>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="wrap js-wrap">
+  <main data-barba="wrapper" id="barba-wrapper" class="main js-main">
+    <div data-barba="container" data-barba-namespace="page-technology" id="js-page-container" class="barba-container" data-group="page-technology">
+<div class="old-theme">
+  <div class="container_bg">
+    <div id="container" class="clearfix">
+      <!-- ================ contents_main ============== -->
+      <div id="contents_main">
+        <div class="inner">
+                                                  <h1><span>技術解説</span></h1>
+
+<div class="index_list_wrap clearfix">
+
+<div class="index_list_box">
+<div class="index_list_box_thumb">
+<a href="/technology/textmining" class="rollover"><img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/old-theme/vext-theme/img/technology/index/thumb_textmining.jpg" alt=""></a>
+</div>
+<div class="index_list_box_caption">
+<h2><a href="/technology/textmining">テキストマイニングとは</a></h2>
+<p>テキストマイニングの基本について解説しています。</p>
+</div>
+<!-- / .list_box --></div>
+
+<div class="index_list_box">
+<div class="index_list_box_thumb">
+<a href="/technology/basic" class="rollover"><img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/old-theme/vext-theme/img/technology/index/thumb_basic.jpg" alt=""></a>
+</div>
+<div class="index_list_box_caption">
+<h2><a href="/technology/basic">基本技術の解説</a></h2>
+<p>テキストマイニングの基本技術について解説しています。</p>
+</div>
+<!-- / .list_box --></div>
+
+<div class="index_list_box">
+<div class="index_list_box_thumb">
+<a href="/technology/compare" class="rollover"><img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/old-theme/vext-theme/img/technology/index/thumb_compare.jpg" alt=""></a>
+</div>
+<div class="index_list_box_caption">
+<h2><a href="/technology/compare">テキストマイニングツール比較</a></h2>
+<p>ツールの概要や、活用シーン別に見た特徴について解説します。</p>
+</div>
+<!-- / .list_box --></div>
+
+<div class="index_list_box">
+<div class="index_list_box_thumb">
+<a href="/technology/column" class="rollover"><img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/old-theme/vext-theme/img/technology/index/thumb_column.jpg" alt=""></a>
+</div>
+<div class="index_list_box_caption">
+<h2><a href="/technology/column">テキストマイニングの手法</a></h2>
+<p>テキストマイニング活用法についてのコラムです。</p>
+</div>
+<!-- / .list_box --></div>
+
+<div class="index_list_box">
+<div class="index_list_box_thumb">
+<a href="/technology/glossary" class="rollover"><img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/old-theme/vext-theme/img/technology/index/thumb_glossary.jpg" alt=""></a>
+</div>
+<div class="index_list_box_caption">
+<h2><a href="/technology/glossary">用語集</a></h2>
+<p>テキストマイニングに関する用語の解説です。</p>
+</div>
+<!-- / .list_box --></div>
+
+<div class="index_list_box">
+<div class="index_list_box_thumb">
+<a href="/technology/voicemining" class="rollover"><img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/old-theme/vext-theme/img/technology/index/thumb_voicemining.jpg" alt=""></a>
+</div>
+<div class="index_list_box_caption">
+<h2><a href="/technology/voicemining">音声マイニングとは</a></h2>
+<p>音声マイニングの概要から基本技術、特徴を解説しています。</p>
+</div>
+<!-- / .list_box --></div>
+
+<div class="index_list_box">
+<div class="index_list_box_thumb">
+<a href="/technology/analysis" class="rollover"><img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/old-theme/vext-theme/img/technology/index/thumb_analysis.jpg" alt=""></a>
+</div>
+<div class="index_list_box_caption">
+<h2><a href="/technology/analysis">会話分析技術の解説</a></h2>
+<p>音声認識テキストの特徴と分析技術を解説しています。</p>
+</div>
+<!-- / .list_box --></div>
+
+<!-- / .index_list_wrap --></div>                                    
+        </div><!-- / .inner -->
+      </div><!-- / #contents_main -->
+
+      
+<!-- ================ contents_sub ============== -->
+<div id="contents_sub">
+<div class="inner">
+
+<h3><img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019//old-theme/vext-theme/img/common/sub_ttl_technology.gif" alt="技術解説"></h3>
+<ul class="nav">
+<li class="now"><h5><a href="/technology">技術解説</a></h5></li>
+<li><h5><a href="/technology/textmining">テキストマイニングとは</a></h5></li>
+<li><h5><a href="/technology/basic">基本技術の解説</a></h5>
+	<ul>
+	<li><h5><a href="/technology/basic/about">テキストマイニングの概要</a></h5></li>
+	<li><h5><a href="/technology/basic/about-challenge">課題と対応方策</a></h5></li>
+	<li><h5><a href="/technology/basic/function-auto">自動学習機能</a></h5></li>
+	<li><h5><a href="/technology/basic/function-clustermap">クラスタマップ機能</a></h5></li>
+	<li><h5><a href="/technology/basic/function-categorize">カテゴライズ機能</a></h5></li>
+	<li><h5><a href="/technology/basic/function-matching">全件マッチング機能</a></h5></li>
+	<li><h5><a href="/technology/basic/function-sign">予兆の発見→監視へ</a></h5></li>
+	<li><h5><a href="/technology/basic/function-analysisflow">分析フローをトータルで支援</a></h5></li>
+	<li><h5><a href="/technology/basic/future">Vextシリーズの目指すもの</a></h5></li>
+	</ul>
+</li>
+<li><h5><a href="/technology/compare">テキストマイニングツール比較</a></h5></li>
+<li><h5><a href="/technology/column">テキストマイニングの手法</a></h5></li>
+<li><h5><a href="/technology/glossary">テキストマイニング用語集</a></h5></li>
+<li><h5><a href="/technology/voicemining">音声マイニングとは</a></h5></li>
+<li><h5><a href="/technology/analysis">会話分析技術の解説</a></h5></li>
+<!-- / .nav --></ul>
+
+
+
+
+
+
+<!-- / .inner --></div>
+<!-- / #contents_sub --></div>
+<!-- ================ /contents_sub ============== -->
+    </div><!-- / #container -->
+  </div><!-- / .container_bg -->
+</div>
+      </div><!-- /.barba-container -->
+    </main><!-- / #barba-wrapper.main -->
+
+  <aside class="section-contact section-contact--margin">
+    <div class="section-contact__title">
+      <h2 class="heading-center ">
+<div class="heading-center__main">Contact</div>
+<div class="heading-center__sub">お問い合わせ</div>
+</h2>
+    </div>
+
+    <div class="section-contact__content section-contact__content--margin">
+      <div class="section-contact__message">
+        <p>ベクストは、「大量のアンケートデータを解析したい」「コールセンターの音声データを業務改善に生かしたい」<br class="u-hidden-inline-sp">「営業日報を業務の改善に生かしたい」そんな考えをお持ちの企業様に、ソリューションを提供いたします。<br>ぜひお気軽にお問い合わせください。</p>
+      </div>
+
+      <div class="section-contact__button">
+        <a href="https://www.vext.co.jp/contact/" class="button-plate ">
+  <div class="button-plate__inner">
+    <p class="button-plate__text">
+              <span class="button-plate__text__icon"><svg class="svg-sprite svg-sprite-mail" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-mail" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+            お問い合わせはこちらから    </p>
+    <span class="button-plate__arrow"><svg class="svg-sprite svg-sprite-arrow" role="img"><use xlink:href="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/svg/sprite.svg#sprite-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span>
+  </div>
+</a>
+      </div>
+
+      <div class="section-contact__bottom">
+        <p class="section-contact__bottom__tel">03-4590-6755</p>
+        <p class="section-contact__bottom__detail">受付時間：9:00〜17:00<br>(土日祝、年末年始除く)</p>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="footer__plate">
+      <div class="footer__plate__item footer__plate__item--pc footer__plate__item--1">
+        <div class="footer-nav">
+          <h2>
+            <a href="https://www.vext.co.jp/about/">ベクストについて</a>
+          </h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/about/compare/">テキストマイニングツールの他社比較</a>
+            </li>
+          </ul>
+
+          <h2>
+            <span>製品一覧</span>
+          </h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/vextminer/">VextMiner</a>
+              <ul>
+                <li><a href="https://www.vext.co.jp/vextcloud/">VextCloud</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/vextvoiceminer/">VextVoiceMiner</a>
+              <ul>
+                <li><a href="https://www.vext.co.jp/vextrecommend/">VextRecommend</a></li>
+                <li><a href="https://www.vext.co.jp/vextresume/">VextResume</a></li>
+                <li><a href="https://www.vext.co.jp/vextportal/">VextPortal</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/download/">カタログダウンロード</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/consulting/">研修コース・分析コンサルティング</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__plate__item footer__plate__item--pc footer__plate__item--2">
+        <div class="footer-nav">
+          <h2><span>導入事例</span></h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/case/">導入事例一覧</a>
+            </li>
+          </ul>
+          <h2><span>セミナー・イベント</span></h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/seminar/">セミナー・イベント一覧</a>
+            </li>
+          </ul>
+          <h2><a href="https://www.vext.co.jp/partnership/">販売パートナープログラム</a></h2>
+          <h2><a href="https://www.vext.co.jp/faq/">よくある質問</a></h2>
+          <h2><a href="https://www.vext.co.jp/contact/">お問い合わせ</a></h2>
+        </div>
+      </div>
+      <div class="footer__plate__item footer__plate__item--pc footer__plate__item--3">
+        <div class="footer-nav">
+          <h2><a href="https://www.vext.co.jp/technology/">技術解説</a></h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/technology/textmining/">テキストマイニングとは</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/technology/basic/">基本技術の解説</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/technology/column/">テキストマイニングの手法</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/technology/glossary/">用語集</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/technology/voicemining/">音声マイニングとは</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/technology/analysis/">会話分析技術の解説</a>
+            </li>
+          </ul>
+          <h2><span>インフォメーション</span></h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/information/">インフォメーション一覧</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__plate__item footer__plate__item--pc footer__plate__item--4">
+        <div class="footer-nav">
+          <h2><a href="https://www.vext.co.jp/company/">会社案内</a></h2>
+          <ul>
+            <li>
+              <a href="https://www.vext.co.jp/history/">沿革</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/security/">情報セキュリティ基本方針</a>
+            </li>
+            <li>
+              <a href="https://www.vext.co.jp/privacy/">個人情報の取り扱いについて</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-company footer-company--margin">
+          <a href="https://www.vext.co.jp/" class="footer-company__logo">
+            <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/footer-logo.png" alt="Vext" class="footer-company__logo__image">
+          </a>
+          <div class="footer-company__detail">
+            <p>東京都品川区上大崎2-15-19<br>
+              MG目黒駅前ビル<br>
+              <a href="https://goo.gl/maps/C57fEjUxP9n5XEuL8" target="_blank">Google Map</a><br>
+              TEL 03-4590-6755</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="footer__plate__item footer__plate__item--sp footer__plate__item--top-1">
+        <div class="footer-nav">
+          <h2><a href="https://www.vext.co.jp/about/">ベクストについて</a></h2>
+          <h2>
+            <span>製品一覧</span>
+          </h2>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="https://www.vext.co.jp/vextminer/">VextMiner</a></li>
+                <li><a href="https://www.vext.co.jp/vextvoiceminer/">VextVoiceMiner</a></li>
+              </ul>
+            </li>
+          </ul>
+          <h2><a href="https://www.vext.co.jp/case/">導入事例</a></h2>
+          <h2><a href="https://www.vext.co.jp/seminar/">セミナー・イベント</a></h2>
+          <h2><a href="https://www.vext.co.jp/partnership/">販売パートナープログラム</a></h2>
+        </div>
+      </div>
+
+      <div class="footer__plate__item footer__plate__item--sp footer__plate__item--top-2">
+        <div class="footer-nav">
+          <h2><a href="https://www.vext.co.jp/technology/">技術解説</a></h2>
+          <h2><a href="https://www.vext.co.jp/faq/">よくある質問</a></h2>
+          <h2><a href="https://www.vext.co.jp/information/">インフォメーション</a></h2>
+          <h2><a href="https://www.vext.co.jp/contact/">お問い合わせ</a></h2>
+        </div>
+      </div>
+
+      <div class="footer__plate__item footer__plate__item--sp footer__plate__item--bottom-1">
+        <div class="footer-nav">
+          <h2><a href="https://www.vext.co.jp/company/">会社案内</a></h2>
+          <ul>
+            <li><a href="https://www.vext.co.jp/history/">沿革</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="https://www.vext.co.jp/security/">情報セキュリティ基本方針</a></li>
+            <li><a href="https://www.vext.co.jp/privacy/">個人情報の取り扱いについて</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__plate__item footer__plate__item--sp footer__plate__item--bottom-2">
+        <div class="footer-company footer-company--margin">
+          <a href="https://www.vext.co.jp/" class="footer-company__logo">
+            <img src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/images/footer-logo.png" alt="Vext" class="footer-company__logo__image">
+          </a>
+          <div class="footer-company__detail">
+            <p>東京都品川区上大崎2-15-19<br>
+              MG目黒駅前ビル<br>
+              <a href="https://goo.gl/maps/C57fEjUxP9n5XEuL8" target="_blank">Google Map</a><br>
+              TEL 03-4590-6755</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="footer__copy"><small>Copyright &copy; 2019 Vext Inc. All Rights Reserved.</small></div>
+  </footer>
+
+</div><!-- /.wrap -->
+<div id="js-switch-mask" class="switch-mask"><div class="switch-mask__inner"></div></div>
+    <script type='text/javascript' src='https://www.vext.co.jp/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
+    <script src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/js/lib.js?v=1.1.5"></script>
+    <script src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/js/app.js?v=1.1.5"></script>
+</body>
+</html>
