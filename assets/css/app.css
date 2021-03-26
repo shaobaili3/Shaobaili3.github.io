@@ -896,7 +896,7 @@ body {
 @media screen and (max-width: 767px) {
   .mv {
     min-width: auto;
-    height: 197vw;
+    height: 150vw;
   }
 }
 .canvas__wrapper {
@@ -1097,7 +1097,7 @@ body {
 }
 .information-bar--mv {
   position: absolute;
-  bottom: 32px;
+  bottom: -35px;
 }
 @media screen and (min-width: 768px) {
   .information-bar--mv {
