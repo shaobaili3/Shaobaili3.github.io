@@ -2881,7 +2881,7 @@ body {
 .slide-cards__item__inner:after {
   top: 85px;
   left: 0;
-  content: "\5C0E\5165\4E8B\4F8B\306E\8A73\7D30\3092\898B\308B";
+  content: "Company Website";
   z-index: 2;
   font-size: 18px;
   font-weight: 700;
