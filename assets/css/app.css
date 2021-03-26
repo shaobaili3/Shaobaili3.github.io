@@ -4182,6 +4182,7 @@ body {
 .section-contact__bottom {
   display: block;
   margin: 35px 0 0;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .section-contact__bottom {
@@ -4189,11 +4190,11 @@ body {
   }
 }
 .section-contact__bottom__tel {
+  color: #0e192d;
   font-size: 27px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.08em;
-  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .section-contact__bottom__tel {
